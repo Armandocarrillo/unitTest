@@ -18,6 +18,7 @@ class CalculatorTest: XCTestCase {
         
         sut = Calculator()
         //XCTAssertNil(sut)
-        XCTAssertNotNil(sut)
+        XCTAssertNotNil(sut, "Sut deberia ser not nil en este punto")
+        //XCTAssertNil(sut, "Sut deberia ser nil en este punto")
     }
 }
