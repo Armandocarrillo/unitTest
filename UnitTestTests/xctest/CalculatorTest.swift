@@ -14,11 +14,18 @@ class CalculatorTest: XCTestCase {
     
     var sut : Calculator!//sujeto bajo prueba
     
+    override func setUp() {
+        print("XXX setUp()")
+        sut = Calculator()
+    }
+    
     func testCalculatorNotNill(){
         
-        sut = Calculator()
+        print("XXX testCalculatorNotNill()")
         //XCTAssertNil(sut)
         XCTAssertNotNil(sut, "Sut deberia ser not nil en este punto")
         //XCTAssertNil(sut, "Sut deberia ser nil en este punto")
     }
+    
+   
 }
