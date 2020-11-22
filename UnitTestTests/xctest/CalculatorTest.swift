@@ -86,6 +86,11 @@ class CalculatorTest: XCTestCase {
         XCTAssertEqual("alberto", "alberto")
         XCTAssertGreaterThan(10, 1)
         
+        func testSubstract(){
+            print("XXX testSubtract()")
+            XCTAssertEqual(4, sut.subtraction(numero1: 11, numero2: 7))
+        }
+        
         
         
     }
