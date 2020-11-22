@@ -76,5 +76,18 @@ class CalculatorTest: XCTestCase {
         XCTAssertEqual(30, sut.add(numero1: 10, numero2: 20))
     }
     
+    func testAssertType(){
+        print("XXX TestAssertType")
+        XCTAssertTrue(1 == 1)
+        XCTAssertFalse(1 == 2)
+        XCTAssertNil(nil)
+        XCTAssertNotNil(sut)
+        XCTAssertEqual(30, sut.add(numero1: 10, numero2: 20))
+        XCTAssertEqual("alberto", "alberto")
+        XCTAssertGreaterThan(10, 1)
+        
+        
+        
+    }
    
 }
